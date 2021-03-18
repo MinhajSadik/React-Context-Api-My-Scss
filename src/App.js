@@ -7,13 +7,15 @@ import Home from './Components/Home/Home';
 export const CategoryContext = createContext();
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(" ");
 
   return (
   <CategoryContext.Provider value={[count, setCount]}>
+
     <Home/>
     <Header/>
     <ShipMent/>
+
   </CategoryContext.Provider>
   );
 }
